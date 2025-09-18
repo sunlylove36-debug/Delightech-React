@@ -8,6 +8,7 @@ import News from './components/News'
 import Videos from './components/Videos'
 import Team from './components/Team'
 import Footer from './components/Footer'
+import Career from './components/Career'
 
 export default function App(){
   return (
@@ -22,6 +23,7 @@ export default function App(){
           <News />
           <Videos />
           <Team />
+          <Career />
         </div>
       </main>
       <Footer />

@@ -9,12 +9,13 @@ export default function Navbar(){
             <img src={logo} alt="Logo" className="h-10 w-10" />
           </div>
         <div className="hidden md:flex gap-6 items-center text-gray-700">
-          <a href="#steps" className="hover:text-blue-600">Home </a>
+          <a href="#" className="hover:text-blue-600">Home </a>
           <a href="#features" className="hover:text-blue-600">Features</a>
           <a href="#solution" className="hover:text-blue-600">Solution</a>
-          <a href="#steps" className="hover:text-blue-600">How it works</a>
+          <a href="#step" className="hover:text-blue-600">How it works</a>
           <a href="#videos" className="hover:text-blue-600">Videos</a>
-          <a href="#steps" className="hover:text-blue-600">Team </a> 
+          <a href="#team" className="hover:text-blue-600">Team </a> 
+          <a href="#career" className="hover:text-blue-600">Career </a>
         </div>
         <div className="flex items-center gap-3">
           <button className="px-4 py-2 rounded bg-blue-600 text-white text-sm">Download</button>
