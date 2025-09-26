@@ -9,14 +9,17 @@ import Videos from './components/Videos'
 import Team from './components/Team'
 import Footer from './components/Footer'
 import Career from './components/Career'
+import { ThemeProvider } from '../src/Context/ThemeContext'
 
 export default function App(){
   return (
-    <div className="min-h-screen flex flex-col">
+    <ThemeProvider >
+    <div className="min-h-screen light:bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+      
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <div className="container mx-auto px-4">
+        <div className="min-h-screen light:bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
           <Features />
           <Solution />
           <Steps />
@@ -28,5 +31,6 @@ export default function App(){
       </main>
       <Footer />
     </div>
+    </ThemeProvider >
   )
 }

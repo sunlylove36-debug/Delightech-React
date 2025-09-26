@@ -61,14 +61,14 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="py-16 bg-white" id="team">
+    <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="team">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-blue-600 font-semibold uppercase">Team</h2>
         <h3 className="text-3xl font-bold mt-2">
-          Meet Our Power Team...
+          <span className="text-blue-500">Meet</span> Our Power Team...
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12">
           {teamMembers.map((member, index) => (
             <div
               key={index}
@@ -84,7 +84,7 @@ const Team = () => {
               </div>
 
               {/* Name & Role */}
-              <h4 className="text-lg font-bold">{member.name}</h4>
+              <h4 className="text-lg font-bold dark:text-dark">{member.name}</h4>
               <p className="text-sm text-gray-500 mb-3">{member.role}</p>
 
               {/* Description */}

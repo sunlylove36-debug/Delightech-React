@@ -9,12 +9,12 @@ const videos = [
 
 const VideoTutorials = () => {
   return (
-    <section className="py-16 bg-white" id="videos">
+    <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="videos">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-blue-600 font-semibold uppercase">Videos</h2>
         <h3 className="text-3xl md:text-4xl font-bold mt-2 mb-10">
-          Video Tutorials
+          <span className="text-blue-500">Videos</span> Tutorials
         </h3>
 
         {/* Video Grid */}

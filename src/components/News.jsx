@@ -26,12 +26,12 @@ const News = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50" id="news">
+    <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="news">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-blue-600 font-semibold uppercase">News</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h3 className="md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white">
             Latest Updates & Announcements
           </h3>
           <p className="mt-2 text-gray-600">

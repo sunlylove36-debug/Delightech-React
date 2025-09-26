@@ -9,13 +9,13 @@ const steps = [
 
 export default function Steps(){
   return (
-    <section id="steps" className="py-16">
-      <h3 className="text-3xl font-bold py-3 text-gray-800 text-center"><span className="text-blue-500">HOW TO</span> PROCESS </h3>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <section id="steps" className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300">
+      <h3 className="text-3xl font-bold py-3 text-white text-center"><span className="text-blue-500">HOW TO</span> PROCESS </h3>
+      <div className="grid grid-cols-1 py-5 md:grid-cols-4 gap-6">
         {steps.map((s,idx)=>(
-          <div key={idx} className="bg-gray-100/40 p-6 rounded-lg shadow-sm text-center">
+          <div key={idx} className="bg-white py-5 dark:text-gray-300 rounded-lg shadow-sm text-center">
             <div className="text-2xl font-bold mb-2">{idx+1}</div>
-            <h4 className="font-semibold">{s.title}</h4>
+            <h4 className="font-semibold text white dark:text-blue-500">{s.title}</h4>
             <p className="text-sm text-gray-600 mt-2">{s.desc}</p> 
           </div>
         ))}
