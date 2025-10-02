@@ -7,7 +7,7 @@ export default function Hero(){
     <section className="bg-gradient-to-r from-blue-600 to-blue-500 text-white py-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-6/12">
-          <h1 className="text-3xl flex justify md:text-5xl font-bold leading-tight">{t("Headhero", { ns:"hero" })}</h1>
+          <h1 className="text-3xl flex justify md:text-4xl font-bold leading-tight">{t("Headhero", { ns:"hero" })}</h1>
           <p className="mt-4 text-lg">{t("Subhero", { ns:"hero" })}</p>
           
         </div>

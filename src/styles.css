@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* custom */
-
+html {font-family: roboto, kantumruy;}
 *{
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
