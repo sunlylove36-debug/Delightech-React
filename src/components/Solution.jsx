@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import mockup from '../assets/mockup (2).png';
 export default function Solution(){
+  const { t } = useTranslation(["solution"]);
   return (
     <section id="solution" className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300">
       <div className="spae-t-280 md:flex items-center gap-8">
@@ -8,15 +10,11 @@ export default function Solution(){
           <img src={mockup} alt="phone" className="" />
         </div>
         <div className="md:w-7/12 flex-1/2 w-auto max-w-[600px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] dropshadow-3xl">
-        <p className="text-blue-600 font-3xl mb-2"> DELIGHTECH CO.,LTD </p>
+        <p className="text-blue-600 font-3xl mb-2"> {t("solution", { ns: "solution" })} </p>
 
-          <h3 className="text-2xl font-semibold mb-4"><span className="text-blue-500">Solution</span> For Your Financial Needs</h3>
+          <h3 className="text-2xl font-semibold mb-4"><span className="text-blue-500">{t("solutionsub", { ns: "solution" })}</span> {t("span", { ns: "solution" })}</h3>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
-            Established since 2018, We're a dynamic team joined by Cambodian who have long experience in financial technology 
-            and core banking systems. We are developing a platform where unbanked people have more convenience instantly access 
-            to financial products without complicated requirements wherever and anytime on any device with advanced technology 
-            and security. Lastly they can build their credit and get better financial products and create a the ecosystem for 
-            banks and serving their daily livelihood needs and connecting with each other on the internet rather than counters.
+            {t("desc", { ns: "solution" })}
 
 
           </p>

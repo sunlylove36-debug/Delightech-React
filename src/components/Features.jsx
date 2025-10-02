@@ -1,4 +1,5 @@
-// src/components/Features.jsx
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from "react-i18next";
 import React from "react";
 
 const features = [
@@ -33,11 +34,12 @@ const features = [
 ];
 
 const Features = () => {
+  const { t } = useTranslation(["features"]);
   return (
     <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="features">
       <div className="max-w-6xl mx-auto text-white text-center mb-12">
-        <h2 className="text-blue-600 font-semibold uppercase">Features</h2>
-        <h3 className="md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white"><span className="text-blue-500">OUR </span> FEATURE</h3>
+        <h2 className="text-blue-600 font-semibold uppercase">{t("features", { ns:"features" })}</h2>
+        <h3 className="md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white"><span className="text-blue-500">{t("ourfeatures", { ns:"features" })}</span>{t("span", { ns:"features" })}</h3>
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">

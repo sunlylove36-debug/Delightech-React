@@ -1,12 +1,14 @@
 import React from 'react'
 import mockup from '../assets/mockup (1).png';
+import { useTranslation } from "react-i18next";
 export default function Hero(){
+  const { t } = useTranslation(["hero"]);
   return (
     <section className="bg-gradient-to-r from-blue-600 to-blue-500 text-white py-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-6/12">
-          <h1 className="text-3xl flex justify md:text-5xl font-bold leading-tight">Achieve Financial &amp; Freedom Stability</h1>
-          <p className="mt-4 text-lg">Cash out on demand instantly with LUYLEUN Mobile App Download now to get loan up to $1000 within 1 hour. Many special offer, suitable fee and various repayment methods.</p>
+          <h1 className="text-3xl flex justify md:text-5xl font-bold leading-tight">{t("Headhero", { ns:"hero" })}</h1>
+          <p className="mt-4 text-lg">{t("Subhero", { ns:"hero" })}</p>
           
         </div>
         <div className="md:w-6/12 flex justify-center">
