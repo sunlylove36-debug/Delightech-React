@@ -7,6 +7,7 @@ import Pengsea from '../assets/5.png'
 import Leapheng from '../assets/7.png'
 import Krisna from '../assets/9.png'
 import Kimsrong from '../assets/8.png'
+import { useTranslation } from "react-i18next"
 const teamMembers = [
   {
     name: "LAY Vila",
@@ -60,6 +61,7 @@ const teamMembers = [
 ];
 
 const Team = () => {
+  const { t } = useTranslation(["team"]);
   return (
     <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="team">
       <div className="max-w-7xl mx-auto px-6 text-center">

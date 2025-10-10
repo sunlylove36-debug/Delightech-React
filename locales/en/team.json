@@ -1,0 +1,38 @@
+{
+    "team": {
+        "title": "Our Team",
+        "description": "Meet the dedicated team behind our success.",
+        "members": {
+            "LAY Vila": {
+                "role": "CEO and Founder",
+                "bio": "Vila has 10 years of experience in Collection/Operational financial industry and in years 2018-2024 with Fin-tech startup."
+            },
+            "PENG Reaksa": {
+                "role": "Business Strategy Advisor",
+                "bio": "Advises on strategic growth and business development opportunities."
+            },
+            "KE Chankrisna ": {
+                "role": "CTO",
+                "bio": "Krisna has over 15 years of experience in IT and more than 10 years in banking system."
+            },
+            "CHUM Kmsrun": {
+                "role": "Product Manager",
+                "bio": "Kimsrun has 6 years of experience in Sales & Marketing. 4 years in charge as a supervisory leader in Delivery apps, Fintech industry, Branding and digital marketing."
+            },
+            "Kimsrong": {
+                "role": "UX/UI Designer",
+                "bio": "Dedicated to creating intuitive and engaging user experiences.",
+            "Kimsrong": {
+                "role": "UX/UI Designer",
+                "bio": "Dedicated to creating intuitive and engaging user experiences.",
+            "Kimsrong": {
+                "role": "UX/UI Designer",
+                "bio": "Dedicated to creating intuitive and engaging user experiences.",
+            "Kimsrong": {
+                "role": "UX/UI Designer",
+                "bio": "Dedicated to creating intuitive and engaging user experiences."
+            }"           
+            }
+        }
+    }
+}
