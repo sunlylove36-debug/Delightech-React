@@ -2,44 +2,42 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from "react-i18next";
 import React from "react";
 
-const features = [
+const getFeatures = (t) => [
   {
     icon: "https://img.icons8.com/fluency/48/000000/add.png",
-    title: "Easy",
-    description:
-      "Apply loan with no hassle and repay anytime and anywhere with our smart mobile app on your mobile phone.",
+    title: t("easymain", { ns:"features" }),
+    description: t("easy", { ns:"features" }),
     bg: "bg-purple-50",
   },
   {
     icon: "https://img.icons8.com/fluency/48/000000/alarm-clock.png",
-    title: "Fast",
-    description:
-      "Smooth, seamless, and simple procedures. Get result instantly on your device.",
+    title: t("fastmain", { ns:"features" }),
+    description: t("fast", { ns:"features" }),
     bg: "bg-purple-100",
   },
   {
     icon: "https://img.icons8.com/fluency/48/000000/shield.png",
-    title: "Secure",
-    description:
-      "We protect your personal and private information with our secure technology."  ,
+    title: t("securemain", { ns:"features" }),
+    description: t("secure", { ns:"features" }),
     bg: "bg-emerald-50",
   },
   {
     icon: "https://img.icons8.com/fluency/48/000000/technical-support.png",
-    title: "Helpful",
-    description:
-      "Our friendly teams are ready to respond to your questions and provide solutions.",
+    title: t("helpfullmain", { ns:"features" }),
+    description: t("helpfull", { ns:"features" }),
     bg: "bg-cyan-50",
   },
 ];
 
 const Features = () => {
   const { t } = useTranslation(["features"]);
+  const features = getFeatures(t);
+  
   return (
     <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="features">
       <div className="max-w-6xl mx-auto text-white text-center mb-12">
         <h2 className="text-blue-600 font-semibold uppercase">{t("features", { ns:"features" })}</h2>
-        <h3 className="md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white"><span className="text-blue-500"> {t("ourfeatures", { ns:"features" })}</span>{t("span", { ns:"features" })}</h3>
+        <h3 className="md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white"><span className="text-blue-500"> {t("ourfeatures", { ns:"features" })} </span>{t("span", { ns:"features" })}</h3>
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">

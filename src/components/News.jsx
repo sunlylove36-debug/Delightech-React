@@ -3,29 +3,27 @@ import New1 from "../assets/luyleun1.png";
 import { useTranslation } from "react-i18next";
 const News = () => {
   const { t } = useTranslation(["news"]);
-  const News = [
+  const getNews = () => [
     {
-      title: "Company Expands Services",
-      date: "September 10, 2025",
-      description:
-        "We are excited to announce the expansion of our services across Cambodia to better serve citizens’ financial needs.",
+      title: t("news1Title", { ns: "news" }),
+      date: t("news1Date", { ns: "news" }),
+      description: t("news1Desc", { ns: "news" }),
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy7V2unhRuKohNcFt69h8b_cy8Bw7beXJOFA&s",
     },
     {
-      title: "New Partnership Announced",
-      date: "August 25, 2025",
-      description:
-        "Our company is partnering with local businesses to empower SMEs with new digital solutions.",
-      image:New1,
+      title: t("news2Title", { ns: "news" }),
+      date: t("news2Date", { ns: "news" }),
+      description: t("news2Desc", { ns: "news" }),
+      image: New1,
     },
     {
-      title: "Award Recognition",
-      date: "July 15, 2025",
-      description:
-        "We are proud to receive recognition for excellence in innovation and customer service.",
+      title: t("news3Title", { ns: "news" }),
+      date: t("news3Date", { ns: "news" }),
+      description: t("news3Desc", { ns: "news" }),
       image: "https://www.khmertimeskh.com/wp-content/uploads/2022/01/32442.jpg",
     },
   ];
+  const newsItems = getNews();
 
   return (
     <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="news">
@@ -43,7 +41,7 @@ const News = () => {
 
         {/* News Cards */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {News.map((item, index) => (
+          {newsItems.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition"
@@ -63,7 +61,7 @@ const News = () => {
                   href="#"
                   className="text-blue-600 font-semibold mt-3 inline-block hover:underline"
                 >
-                  Read More →
+                  {t("readMore", { ns: "news" })} →
                 </a>
               </div>
             </div>

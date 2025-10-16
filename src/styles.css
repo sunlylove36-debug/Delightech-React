@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* custom */
-html {font-family: roboto, kantumruy;}
-*{
+/* Import Khmer fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Noto+Sans+Khmer:wght@400;500;600;700&display=swap');
+
+/* Custom font configuration with Khmer support */
+html {
+  font-family: 'Kantumruy Pro', 'Noto Sans Khmer', roboto, sans-serif;
+}
+
+/* Enhanced transitions */
+* {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Ensure proper Khmer text rendering */
+[lang="kh"], .khmer-text {
+  font-family: 'Kantumruy Pro', 'Noto Sans Khmer', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+/* Improve readability for Khmer text */
+.khmer-text {
+  word-spacing: 0.1em;
 }

@@ -8,66 +8,68 @@ import Leapheng from '../assets/7.png'
 import Krisna from '../assets/9.png'
 import Kimsrong from '../assets/8.png'
 import { useTranslation } from "react-i18next"
-const teamMembers = [
+
+const getTeamMembers = (t) => [
   {
     name: "LAY Vila",
     role: "CEO & Founder",
     img: team,
-    desc: "Vila has 10 years of experience in Collection/Operational financial industry and in years 2018-2024 with Fin-tech startup.",
+    desc: t("layVilaDesc", { ns: "team" }),
   },
   {
     name: "PENG Reaksa",
     role: "Business Strategy Advisor",
     img: Raksa,
-    desc: "Advises on strategic growth and business development opportunities.",
+    desc: t("pengReaksaDesc", { ns: "team" }),
   },
   {
     name: "KE Chankrisna",
     role: "CTO",
     img: Krisna,
-    desc: "Krisna has over 15 years of experience in IT and more than 10 years in banking system.",
+    desc: t("keChankrisnaDesc", { ns: "team" }),
   },
   {
     name: "CHUM Kmsrun",
     role: "Head Marketing",
     img: kimsrun,
-    desc: "Kimsrun has 6 years of experience in Sales & Marketing. 4 years in charge as a supervisory leader in Delivery apps, Fintech industry, Branding and digital marketing.",
+    desc: t("chumKimsrunDesc", { ns: "team" }),
   },
   {
     name: "LY Chenda",
     role: "Head Operation & Customer Processing",
     img: Chanda,
-    desc: "Chenda leads the Customer Services and Collection departments. She has 5 years of experience in the field. she has involved many departments in operations since our first start.",
+    desc: t("lyChandaDesc", { ns: "team" }),
   },
   {
     name: "LY Pengsea",
     role: "Head of Finance",
     img: Pengsea,
-    desc: "With 4 years of experiences in financial industry, I have a keen interest in the financial field and thrilled to see how technology is revolutionizing the industry.",
+    desc: t("lyPengseaDesc", { ns: "team" }),
   },
   {
     name: "METH Leapheng",
     role: " Head Human Resources",
     img: Leapheng,
-    desc: "4 years experience in Construction and F&B Company with Managing on HRIS and Employee benefit management.",
+    desc: t("methLeaphengDesc", { ns: "team" }),
   },
   {
     name: "TAING Kimsrorng",
     role: "Head of Collection",
     img: Kimsrong,
-    desc: "Kimsrorng has more than 4 years of experience in financial industry, she has been involved in many departments in operation since our first start.",
+    desc: t("taingKimsrorngDesc", { ns: "team" }),
   },
-
 ];
 
 const Team = () => {
   const { t } = useTranslation(["team"]);
+  const teamMembers = getTeamMembers(t);
+  
   return (
     <section className="py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300" id="team">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-blue-600 font-semibold uppercase">Team</h2>
-        <h3 className="text-3xl font-bold mt-2">
-          <span className="text-blue-500">Meet</span> Our Power Team...
+        <h2 className="text-blue-600 font-semibold uppercase">{t("team", { ns: "team" })}</h2>
+        <h3 className="text-3xl font-bold mt-2 dark:text-white">
+          <span className="text-blue-500">{t("meet", { ns: "team" })}</span> {t("ourPowerTeam", { ns: "team" })}
         </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12">
@@ -97,7 +99,7 @@ const Team = () => {
                 href="#"
                 className="mt-3 text-blue-600 text-sm font-medium hover:underline"
               >
-                More About {member.name.split(" ")[0]}
+                {t("moreAbout", { ns: "team" })} {member.name.split(" ")[0]}
               </a>
             </div>
           ))}

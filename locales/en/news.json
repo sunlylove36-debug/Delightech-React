@@ -1,5 +1,15 @@
 {
     "news": "News",
     "subnews": "Latest Updates & Announcements",
-    "descnews": "Stay up to date with our company news and updates."
+    "descnews": "Stay up to date with our company news and updates.",
+    "readMore": "Read More",
+    "news1Title": "Company Expands Services",
+    "news1Date": "September 10, 2025",
+    "news1Desc": "We are excited to announce the expansion of our services across Cambodia to better serve citizens' financial needs.",
+    "news2Title": "New Partnership Announced",
+    "news2Date": "August 25, 2025",
+    "news2Desc": "Our company is partnering with local businesses to empower SMEs with new digital solutions.",
+    "news3Title": "Award Recognition",
+    "news3Date": "July 15, 2025",
+    "news3Desc": "We are proud to receive recognition for excellence in innovation and customer service."
 }

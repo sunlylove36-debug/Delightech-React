@@ -24,7 +24,7 @@ export default function Navbar(){
            <LanguageSwitcher/>
         </div>
         <div className="flex items-center gap-3">
-          <button className="px-4 py-2 border rounded-full px-6 bg-white text-blue-500 text-sm">Login</button>
+          <button className="px-4 py-2 border rounded-full px-6 bg-white text-blue-500 text-sm">{t("login", { ns: "navbar" })}</button>
         </div>
       </div>
       </div>

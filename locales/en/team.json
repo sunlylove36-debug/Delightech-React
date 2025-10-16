@@ -1,38 +1,14 @@
 {
-    "team": {
-        "title": "Our Team",
-        "description": "Meet the dedicated team behind our success.",
-        "members": {
-            "LAY Vila": {
-                "role": "CEO and Founder",
-                "bio": "Vila has 10 years of experience in Collection/Operational financial industry and in years 2018-2024 with Fin-tech startup."
-            },
-            "PENG Reaksa": {
-                "role": "Business Strategy Advisor",
-                "bio": "Advises on strategic growth and business development opportunities."
-            },
-            "KE Chankrisna ": {
-                "role": "CTO",
-                "bio": "Krisna has over 15 years of experience in IT and more than 10 years in banking system."
-            },
-            "CHUM Kmsrun": {
-                "role": "Product Manager",
-                "bio": "Kimsrun has 6 years of experience in Sales & Marketing. 4 years in charge as a supervisory leader in Delivery apps, Fintech industry, Branding and digital marketing."
-            },
-            "Kimsrong": {
-                "role": "UX/UI Designer",
-                "bio": "Dedicated to creating intuitive and engaging user experiences.",
-            "Kimsrong": {
-                "role": "UX/UI Designer",
-                "bio": "Dedicated to creating intuitive and engaging user experiences.",
-            "Kimsrong": {
-                "role": "UX/UI Designer",
-                "bio": "Dedicated to creating intuitive and engaging user experiences.",
-            "Kimsrong": {
-                "role": "UX/UI Designer",
-                "bio": "Dedicated to creating intuitive and engaging user experiences."
-            }"           
-            }
-        }
-    }
+  "team": "Team",
+  "meet": "Meet",
+  "ourPowerTeam": "Our Power Team...",
+  "moreAbout": "More About",
+  "layVilaDesc": "Vila has 10 years of experience in Collection/Operational financial industry and in years 2018-2024 with Fin-tech startup.",
+  "pengReaksaDesc": "Advises on strategic growth and business development opportunities.",
+  "keChankrisnaDesc": "Krisna has over 15 years of experience in IT and more than 10 years in banking system.",
+  "chumKimsrunDesc": "Kimsrun has 6 years of experience in Sales & Marketing. 4 years in charge as a supervisory leader in Delivery apps, Fintech industry, Branding and digital marketing.",
+  "lyChandaDesc": "Chenda leads the Customer Services and Collection departments. She has 5 years of experience in the field. she has involved many departments in operations since our first start.",
+  "lyPengseaDesc": "With 4 years of experiences in financial industry, I have a keen interest in the financial field and thrilled to see how technology is revolutionizing the industry.",
+  "methLeaphengDesc": "4 years experience in Construction and F&B Company with Managing on HRIS and Employee benefit management.",
+  "taingKimsrorngDesc": "Kimsrorng has more than 4 years of experience in financial industry, she has been involved in many departments in operation since our first start."
 }
